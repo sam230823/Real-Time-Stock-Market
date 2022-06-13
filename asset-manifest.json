@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/stock-market-dashboard.git/static/css/main.e4a78dab.css",
-    "main.js": "/stock-market-dashboard.git/static/js/main.5b476157.js",
-    "static/js/787.27c395e9.chunk.js": "/stock-market-dashboard.git/static/js/787.27c395e9.chunk.js",
-    "index.html": "/stock-market-dashboard.git/index.html",
-    "main.e4a78dab.css.map": "/stock-market-dashboard.git/static/css/main.e4a78dab.css.map",
-    "main.5b476157.js.map": "/stock-market-dashboard.git/static/js/main.5b476157.js.map",
-    "787.27c395e9.chunk.js.map": "/stock-market-dashboard.git/static/js/787.27c395e9.chunk.js.map"
+    "main.css": "/stock-market-dashboard/static/css/main.e4a78dab.css",
+    "main.js": "/stock-market-dashboard/static/js/main.7f99531c.js",
+    "static/js/787.27c395e9.chunk.js": "/stock-market-dashboard/static/js/787.27c395e9.chunk.js",
+    "index.html": "/stock-market-dashboard/index.html",
+    "main.e4a78dab.css.map": "/stock-market-dashboard/static/css/main.e4a78dab.css.map",
+    "main.7f99531c.js.map": "/stock-market-dashboard/static/js/main.7f99531c.js.map",
+    "787.27c395e9.chunk.js.map": "/stock-market-dashboard/static/js/787.27c395e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4a78dab.css",
-    "static/js/main.5b476157.js"
+    "static/js/main.7f99531c.js"
   ]
 }
