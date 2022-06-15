@@ -16,13 +16,12 @@ const Graphic = () => {
   const [filter, setFilter] = useState("1W");
 
   const { stockSymbol } = useContext(StockContext);
-
   const formatData = (data) => {
     return data.c.map((item, index) => {
       return {
         value: item.toFixed(2),
         date: convertUnixTimeStampToDate(data.t[index]),
-        // time: new Date(data.t[index]).toLocaleTimeString("en-US"), //converts unixtimestamp to xx:xx am/pm
+        time: new Date(data.t[index]).toLocaleTimeString("en-US"), //converts unixtimestamp to xx:xx am/pm
       };
     });
   };
@@ -43,8 +42,6 @@ const Graphic = () => {
       }
 
       const startDate = createDate(endDate, -days, -weeks, -months, -years);
-      console.log(endDate);
-      console.log(startDate);
       const startTimeStampUnix = convertDateToUnixTimestamp(startDate);
       const endTimeStampUnix = convertDateToUnixTimestamp(endDate);
 
@@ -88,7 +85,7 @@ const Graphic = () => {
           );
         })}
       </ul>
-      <Chart data={data} />
+      <Chart data={data} filter={filter} />
     </Card>
   );
 };

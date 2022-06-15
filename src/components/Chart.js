@@ -4,9 +4,8 @@ import { Chart as ChartJS } from "react-chartjs-2";
 import DarkModeContext from "../context/DarkModeContext";
 import React, { useContext } from "react";
 
-const Chart = ({ data }) => {
+const Chart = ({ data, filter }) => {
   const { darkMode } = useContext(DarkModeContext);
-
   const chartData = {
     labels: data.map((obj) => obj.date),
     datasets: [
@@ -47,7 +46,7 @@ const Chart = ({ data }) => {
         ticks: {
           color: darkMode ? "white" : "black",
           font: {
-            size: 12,
+            size: 16,
           },
         },
         grid: {
@@ -58,9 +57,9 @@ const Chart = ({ data }) => {
         ticks: {
           color: darkMode ? "white" : "black",
           font: {
-            size: 12,
+            size: 16,
           },
-          maxTicksLimit: 28,
+          maxTicksLimit: filter === "1D" ? 12 : 24,
         },
         grid: {
           display: false,

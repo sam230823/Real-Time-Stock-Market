@@ -17,7 +17,6 @@ const Dashboard = () => {
     const updateStockDetails = async () => {
       try {
         const result = await fetchStockDetails(stockSymbol);
-        console.log(result);
         setStockDetails(result);
       } catch (error) {
         setStockDetails({});

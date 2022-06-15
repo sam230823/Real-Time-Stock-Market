@@ -10,7 +10,9 @@ const Header = ({ name, logo }) => {
         <Search />
       </div>
       <div className="h-16 w-16 xl:h-32 xl:w-32 ml-2">
-        <img className="object-cover" src={logo} alt="company logo"></img>
+        {logo && (
+          <img className="object-cover" src={logo} alt="company logo"></img>
+        )}
       </div>
       <ThemeIcon />
     </>
