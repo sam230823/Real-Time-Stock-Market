@@ -4,7 +4,7 @@ A stock market dashboard that allows users to view information of different stoc
 
 **Link to project:** https://arahm730.github.io/stock-market-dashboard
 
-<img src="./dashboard.gif" width="1200" height="400" />
+<img src="./dashboard.gif" width="800" height="400" />
 
 ## How It's Made:
 
